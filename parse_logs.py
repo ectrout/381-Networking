@@ -18,6 +18,7 @@ def parse_cowrie_logs(log_dir):
                             "src_port": entry.get("src_port", 0),
                             "dst_port": entry.get("dst_port", 0),
                             "event_id": entry.get("eventid", ""),
+                            "session": entry.get("session", ""),
                             "input": entry.get("input", ""),
                             "username": entry.get("username", ""),
                             "password": entry.get("password", ""),
